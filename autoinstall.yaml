@@ -1,0 +1,44 @@
+autoinstall:
+    version: 1
+    identity:
+        realname: 'FSLab'
+        hostname: Ubuntu-FSLab
+        username: fslab
+        password: "$6$KX1Jp8j+UsIYQTSZ$vTeUtI9fi47nHLzDiNHHJs7eTegshk7xpp2EsS3HfSrHZrQYMD7Wr9zjQCvcwb3OZk0UjX.Fs8IVHs7z7yaO70"
+    locale: pt_BR.utf8
+    keyboard:
+        layout: br
+    timezone: "America/Porto_Velho"
+    packages:
+        - libreoffice
+        - gimp
+        - git
+        - wget
+        - curl
+        - nodejs
+        - npm
+    snaps:
+        - name: code
+          channel: stable
+          classic: true
+        - name: insomnia
+          channel: stable
+          classic: false
+        - name: postman
+          channel: stable
+          classic: false
+        - name: spotify
+          channel: stable
+          classic: false
+        - name: firefox
+          channel: stable
+          classic: false
+        - name: docker
+          channel: stable
+          classic: true
+    codecs:
+        install: true
+    drivers:
+        install: true
+    updates: all
+    shutdown: reboot
